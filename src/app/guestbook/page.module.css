@@ -1,0 +1,67 @@
+.drawer{
+    display: flex;
+    padding: 1rem;
+}
+
+.drawer >div:nth-child(1){
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.brushcanvasholder{
+    display: flex;
+}
+
+.brushviewer{
+    width: 30.34vw;
+    height: 30.34vw;
+    /* background-color: yellow; */
+}
+
+.controlpannel{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+}
+.controlpannel >button:nth-child(1){
+    flex-grow: 1;
+}
+
+.drawer >div:nth-child(2){
+    width: 60%;
+    height: calc(100vh - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.palette{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.palette li{
+    list-style: none;
+}
+
+.palette li input:checked ~ label{
+    border-radius: 100rem;
+}
+
+.palette li label{
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+
+.brushsize{
+    position: relative;
+}
+
+.drawcanvasholder{
+    display: flex;
+}
